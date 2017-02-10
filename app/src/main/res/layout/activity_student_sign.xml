@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_student_sign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft= "1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="com.xinnuo.apple.healthtesting.StudentSignActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="卡 号"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:id="@+id/textView4"
+                    android:layout_weight="2"
+                    android:textColor="@color/encode_view" />
+
+                <TextView
+                    android:text="请将卡片贴在扫描区上"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:id="@+id/studentSign_TextView"
+                    android:layout_weight="6"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <TextView
+                android:text="签到人数："
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:id="@+id/studentCount_textView" />
+
+        </LinearLayout>
+
+        <ListView
+            android:stackFromBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp"
+            android:paddingLeft= "20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="@color/gray"
+            android:id="@+id/studentList_listView" />
+
+
+    </LinearLayout>
+</RelativeLayout>

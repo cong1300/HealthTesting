@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_height_and_weight"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="1dp"
+    android:paddingLeft= "1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="com.xinnuo.apple.healthtesting.HeightAndWeightActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="卡 号"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:id="@+id/textView4"
+                android:layout_weight="2"
+                android:textColor="@color/encode_view" />
+
+            <TextView
+                android:text="请将卡片贴在扫描区上"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:id="@+id/text_cardNumber"
+                android:layout_weight="6"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_hight">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    >
+
+                    <EditText
+                        android:id="@+id/leave_hight"
+                        android:layout_width="match_parent"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:hint="请输入身高"
+                        android:minLines="10"
+                        android:maxLines="15"
+                        android:scrollbars="vertical"
+                        android:background="@android:drawable/edit_text"
+                        android:layout_height="121dp"
+                        android:digits="1234567890."
+
+
+                        />
+
+                    <EditText
+                        android:id="@+id/leave_wight"
+                        android:layout_width="match_parent"
+                        android:layout_height="121dp"
+                        android:enabled="true"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:hint="请输入体重"
+                        android:minLines="10"
+                        android:maxLines="15"
+                        android:scrollbars="vertical"
+                        android:background="@android:drawable/edit_text"
+                        android:digits="1234567890."
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:text="提 交"
+                android:layout_height="match_parent"
+                android:id="@+id/wight_button"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:background="@color/status_text"
+                 />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

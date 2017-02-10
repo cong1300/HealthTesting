@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">健康测试</string>
+    <string name="menu_settings">Settings</string>
+    <string name="info">健康测试</string>
+    <string name="error">Error</string>
+    <string name="no_nfc">No NFC found on this device</string>
+    <string name="nfc_disabled">NFC is not enabled. Please go to the wireless settings to enable it.</string>
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/order_textView"
+            android:layout_width="0dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/time_textView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_textView"
+        android:layout_weight="1" />
+
+</LinearLayout>
